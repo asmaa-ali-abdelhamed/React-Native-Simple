@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Text, View, StyleSheet, Image, ScrollView, Icon, Button, Card } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, Icon, Button } from 'react-native';
 import Style from "./Style";
 import axios from "axios";
 import Details from "./Details";
+import { Card, Image } from "@rneui/themed";
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
 
-const Prodact = ({navigation}) =>{
+const Product = ({navigation}) =>{
+  
 
   const [products, setProducts] = useState([])
 
@@ -43,9 +45,4 @@ const Prodact = ({navigation}) =>{
   )}
 
   
-  export default Prodact;
-
-
-// import { Card, Image } from "@rneui/themed";
-
-
+  export default Product;
